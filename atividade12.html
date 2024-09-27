@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+</head>
+<body>
+    <script>
+        function dataExtensa(data){
+            var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+            var reparticao = data.split('/')
+            var dia = reparticao[0]
+            var mes = reparticao[1] - 1
+            var ano = reparticao[2]
+            if (mes >= 0 && mes <= 11) {
+                return dia + " de " + meses[mes] + " de " + ano
+            }
+            else{
+                return null
+            }
+        }
+        var dataEstruturada = dataExtensa("12/12/2012")
+        alert(dataEstruturada)
+    </script>
+</body>
+</html>

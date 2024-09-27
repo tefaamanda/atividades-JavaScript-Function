@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+<body>
+    <script>
+        function calculadora(N1, N2, simbolo){
+            if (simbolo === "+"){
+                return N1 + N2
+            }
+            else if (simbolo === "-"){
+                return N1 - N2
+            }
+            else if (simbolo === "*"){
+                return N1 * N2
+            }
+            else if (simbolo === "/"){
+                return N1 / N2
+            }
+        }
+        var resultado1 = calculadora(10.00, 20.00, "+")
+        alert("A soma dos números é: " + resultado1)
+        var resultado2 = calculadora(10.00, 20.00, "-")
+        alert("A subtração dos números é: " + resultado2)
+        var resultado3 = calculadora(10.00, 20.00, "*")
+        alert("A multiplicação dos números é: " + resultado3)
+        var resultado4 = calculadora(10.00, 20.00, "/")
+        alert("A divisão dos números é: " + resultado4)
+    </script>
+</body>
+</html>

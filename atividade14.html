@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+</head>
+<body>
+    <script>
+        function bhaskara(a, b, c){
+            var delta = b * b - 4 * a * c
+            if (delta < 0){
+                return "Não possui raízes reais."
+            } 
+            var raiz1 = (-b + Math.sqrt(delta)) / (2 * a)
+            var raiz2 = (-b - Math.sqrt(delta)) / (2 * a)
+            return "As raízes calculadas resultam em: " + raiz1 + " e " + raiz2
+        }
+        var resultado = bhaskara(1, 12, -13)
+        alert(resultado)
+    </script>
+</body>
+</html>

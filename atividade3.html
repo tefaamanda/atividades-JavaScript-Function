@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <script>
+        function novoNumero(N1, N2) { 
+            if (N1 < 10 || N1 > 99 || N2 < 10 || N2 > 99) {
+                return "O número não é válido."
+            }
+            var primeiroNumero = Math.floor(N1/10)
+            var ultimoNumero = N2 % 10
+            return (primeiroNumero * 10) + ultimoNumero
+        }
+        var resultado1 = novoNumero(23, 89)
+        alert(resultado1)
+        var resultado2 = novoNumero(54, 32)
+        alert(resultado2)
+    </script>
+</body>
+</html>

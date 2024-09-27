@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+</head>
+<body>
+    <script>
+        function palavraEmbaralhada(palavra){
+            var reparticao = palavra.split('')
+            var palavraEsquisita = ''
+            while (reparticao.length > 0){
+                var bagunca = Math.floor(Math.random() * reparticao.length)
+                palavraEsquisita += reparticao.splice(bagunca, 1)
+            }
+            return palavraEsquisita.toLowerCase()
+        }
+        var palavraNova = palavraEmbaralhada("calopsita")
+        alert(palavraNova)
+    </script>
+</body>
+</html>
